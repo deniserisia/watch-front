@@ -4,13 +4,14 @@
     left: 0;
     right: 0;
     z-index: 2;
-    background-color: #0F1934;
+    background: linear-gradient(45deg, #6705c7, #fe511a);
+
     padding: 30px;
     font-family: 'Nunito Sans', sans-serif;
   }
 .ml-2{
     font-size: 15px;
-    font-weight: bold;
+    color: #fff;
 }
 .button-menu{
   vertical-align: middle;
@@ -66,9 +67,9 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 3px; /* Largura da linha vertical */
-    background-color: #0D356A; /* Cor da linha vertical */
-    display: none; /* Inicialmente, a linha está oculta */
+    width: 5px; 
+    background-color:#fe511a; /* Cor da linha vertical */
+    display: none; 
     font-weight: bold;
 }
 
@@ -78,16 +79,16 @@
 }
 
 .mat-list-item:hover {
-    background-color: #e3eaf0; /* Cor de destaque ao passar o mouse */
+    background-color: transparent; 
     font-weight: bold;
 }
 
 .mat-list-item:hover .icon {
-    color: #0D356A;
+    color:#fe511a;
 }
 
 .mat-list-item:hover span {
-    color: #0D356A;
+    color: #fe511a;
 }
 
 /* Adaptações para dispositivos móveis */
@@ -129,11 +130,10 @@
 
 .heading-home{
     font-size: 0.87rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 900;
     margin-left: 14px;
     margin-top: 18px;
-    color: #0F1934;
+    color: #ffffff;
 }
 
 .active-link {
@@ -145,7 +145,7 @@
 
 .mat-drawer-sidenav{
     width: 200px;
-    background-color: #f2f2f2;
+    background: #981d8e;
     overflow-x: hidden;
     margin-top: 15px;
     font-family: 'Nunito Sans', sans-serif;
@@ -153,7 +153,7 @@
 
 .mat-drawer-footer{
     display: flex;
-    background-color:  #8C8E94;
+    background-color: #fe511a;
     padding: 0.75rem;
     padding-left: 1rem;
     left: 0;
