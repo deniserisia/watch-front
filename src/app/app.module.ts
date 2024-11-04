@@ -8,6 +8,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 import { SistemaModule } from './sistema/sistema.module';
 import { TemplateModule } from './template/template.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TemplateModule } from './template/template.module';
     BrowserAnimationsModule,
     TemplateModule,
     SistemaModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
