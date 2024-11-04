@@ -1,69 +1,59 @@
 <div class="bg-primary"></div>
-    <div id="layoutAuthentication">
-        <div id="layoutAuthentication_content">
-            <main>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5">
-                            <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header">
-                                    <div class="text-center">
-                                        <img src="assets/imgs/logo-watch-card.png" alt="" class="d-inline-block align-text-top" style="padding: 10px; height: 85px;">
-                                    </div>
+<div id="layoutAuthentication">
+    <div id="layoutAuthentication_content">
+        <main>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card shadow-lg border-0 rounded-lg mt-5">
+                            <div class="card-header">
+                                <div class="text-center">
+                                    <img src="assets/imgs/logo-watch-card.png" alt="" class="d-inline-block align-text-top" style="padding: 10px; height: 85px;">
                                 </div>
-                                <div class="card-body">
-                                  
-
-                                    <!-- Login Form -->
-                                    <form #loginForm="ngForm"  (submit)="onSubmit()">
-
-                                        <div class="form-group col-sm-12 col-md-6">
-                                            <label class="small mb-1" style="font-size: 1.2em;">Username</label>
-                                            <input type="text" name="username"  autocomplete="off" class="form-control py-2 responsive-input" placeholder="Informe o seu username" required />
-                                        </div>
-
-                                        <div class="form-group col-sm-12 col-md-6">
-                                            <label class="small mb-1" style="font-size: 1.2em;">Senha</label>
-                                            <div class="input-group">
-                                              <input type="password" name="password"  class="form-control py-2 responsive-input" placeholder="Informe a sua senha" required />
-                                              <div class="input-group-append">
-                                                <div class="btn btn-outline-secondary" type="button">
-                                                  <img  src="assets/imgs/view.svg" alt="Mostrar senha" width="16" height="16">
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>                               
-
-                                        <div class="form-group align-items-center justify-content-between mt-4 mb-0">
-                                            <div class="col-sm-12 col-md-6">
-                                                <button type="submit" class="btn btn-primary btn-lg btn-block" >Entrar</button>
-                                            </div>
-                                        </div>
-                                        
-                                         <!-- BTN ESQUECEU A SENHA 
-                                        <div class="form-group col-sm-12 col-md-6 text-center"> 
-                                            <a href="#" class="small mb-1 text-decoration-none text-primary forgot-password-link" (click)="forgotPassword($event)">
-                                                <span>Esqueceu sua senha?</span> Recupere aqui!
-                                            </a>
-                                        </div>
-                                     -->                                        
-
-                                    </form>
-
-                                    
-                                </div>
-
-                                <div class="card-footer text-center">
-                                    <div class="small">
-                                        <a href="#">
-                                            <span class="white-text">Ainda não possui uma conta? </span> <span class="green-text">Crie agora!</span>
-                                        </a>
-                                    </div>
-                                </div> 
                             </div>
+                            <div class="card-body">
+
+                                <!-- Título do Formulário -->
+                                <h2 class="text-center mb-4" style="font-size: 1.5em; color: #fff;">Login - Monitoramento</h2>
+
+                                <!-- Login Form -->
+                                <form #loginForm="ngForm" (submit)="onSubmit()">
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="small mb-1" style="font-size: 1.2em;">Username</label>
+                                        <input type="text" name="username" autocomplete="off" class="form-control py-2 responsive-input" style="color: #fff;" placeholder="Informe o seu username" required />
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="small mb-1" style="font-size: 1.2em;">Senha</label>
+                                        <div class="input-group">
+                                            <input type="password" name="password" class="form-control py-2 responsive-input" placeholder="Informe a sua senha" required />
+                                            <div class="input-group-append">
+                                                <div class="btn btn-outline-secondary" type="button">
+                                                    <img src="assets/imgs/view.svg" alt="Mostrar senha" width="16" height="16">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                               
+
+                                    <div class="form-group align-items-center justify-content-between mt-4 mb-0">
+                                        <div class="col-sm-12 col-md-6">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="card-footer text-center">
+                                <div class="small">
+                                    <a href="#">
+                                        <span class="white-text">Ainda não possui uma conta? </span> <span class="green-text">Crie agora!</span>
+                                    </a>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
-            </main>
-        </div>
+            </div>
+        </main>
     </div>
+</div>
