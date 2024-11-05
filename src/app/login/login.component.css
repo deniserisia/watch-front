@@ -2,6 +2,7 @@
     background-image: url('src/assets/imgs/bg-login.svg'); 
     background-size: cover;
     background-position: center; 
+    background-color: #5C019C;
 }
 
 .btn-primary {

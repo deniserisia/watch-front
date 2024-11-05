@@ -4,8 +4,7 @@
     left: 0;
     right: 0;
     z-index: 2;
-    background: linear-gradient(45deg, #6705c7, #fe511a);
-
+    background: #FF4F0C;
     padding: 30px;
     font-family: 'Nunito Sans', sans-serif;
   }
@@ -145,7 +144,7 @@
 
 .mat-drawer-sidenav{
     width: 200px;
-    background: #981d8e;
+    background: #1E1E22;
     overflow-x: hidden;
     margin-top: 15px;
     font-family: 'Nunito Sans', sans-serif;
@@ -153,7 +152,7 @@
 
 .mat-drawer-footer{
     display: flex;
-    background-color: #fe511a;
+    background-color: #C62A3D;
     padding: 0.75rem;
     padding-left: 1rem;
     left: 0;
