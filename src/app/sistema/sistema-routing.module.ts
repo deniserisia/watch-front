@@ -5,6 +5,9 @@ import { DashboardQaComponent } from './dashboard-qa/dashboard-qa.component';
 import { DashboardSuporteComponent } from './dashboard-suporte/dashboard-suporte.component';
 import { LayoutComponent } from '../layout/layout.component';
 import { PreVisuComponent } from './pre-visu/pre-visu.component';
+import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
+
+
 
 const routes: Routes = [
   {path:'visu', component: PreVisuComponent},
@@ -12,7 +15,8 @@ const routes: Routes = [
     component: LayoutComponent, children:[
       {path: 'dashboard-gerente', component: DashboardGerenteComponent},
       {path: 'dashboard-qa', component: DashboardQaComponent},
-      {path: 'dashboard-suporte', component: DashboardSuporteComponent}
+      {path: 'dashboard-suporte', component: DashboardSuporteComponent},
+      {path: 'meu-perfil', component: MeuPerfilComponent},
     ]}
 ];
 

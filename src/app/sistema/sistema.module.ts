@@ -6,6 +6,10 @@ import { PreVisuComponent } from './pre-visu/pre-visu.component';
 import { DashboardGerenteComponent } from './dashboard-gerente/dashboard-gerente.component';
 import { DashboardQaComponent } from './dashboard-qa/dashboard-qa.component';
 import { DashboardSuporteComponent } from './dashboard-suporte/dashboard-suporte.component';
+import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -13,11 +17,13 @@ import { DashboardSuporteComponent } from './dashboard-suporte/dashboard-suporte
     PreVisuComponent,
     DashboardGerenteComponent,
     DashboardQaComponent,
-    DashboardSuporteComponent
+    DashboardSuporteComponent,
+    MeuPerfilComponent,
   ],
   imports: [
     CommonModule,
-    SistemaRoutingModule
+    SistemaRoutingModule,
+    FormsModule
   ]
 })
 export class SistemaModule { }

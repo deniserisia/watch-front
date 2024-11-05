@@ -1,0 +1,46 @@
+<div class="container pt-5">
+    <div class="container mt-4">
+      <h1 class="mt-4"><span> | </span> Meu Perfil</h1>
+    </div>
+  
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="profile-photo-container">
+          <img [src]="usuario.fotoUrl || 'assets/imagens/foto.svg'" alt="Foto do Usuário" class="profile-photo">
+          <div *ngIf="editMode" class="profile-photo-upload">
+            <label for="file-upload" class="custom-file-upload">
+              Escolher Foto
+            </label>
+            <input id="file-upload" type="file" (change)="onFileSelected($event)" />
+          </div>
+        </div>
+        <div class="profile-info">
+          <p class="text-white"><strong>Username: </strong>
+            <span *ngIf="!editMode">{{ usuario.username }}</span>
+            <input *ngIf="editMode" [(ngModel)]="usuario.username" class="form-control" />
+          </p>
+          <p class="text-white"><strong>Nome: </strong>
+            <span *ngIf="!editMode">{{ usuario.nome }}</span>
+            <input *ngIf="editMode" [(ngModel)]="usuario.nome" class="form-control" />
+          </p>
+          <p class="text-white"><strong>E-mail: </strong>
+            <span *ngIf="!editMode">{{ usuario.email }}</span>
+            <input *ngIf="editMode" [(ngModel)]="usuario.email" class="form-control" />
+          </p>
+          <p class="text-white"><strong>Setor: </strong>
+            <span *ngIf="!editMode">{{ usuario.setor }}</span>
+            <input *ngIf="editMode" [(ngModel)]="usuario.setor" class="form-control" />
+          </p>
+          <p class="text-white"><strong>Cargo: </strong>
+            <span *ngIf="!editMode">{{ usuario.cargo }}</span>
+            <input *ngIf="editMode" [(ngModel)]="usuario.cargo" class="form-control" />
+          </p>
+        </div>
+      </div>
+      <div class="profile-actions">
+        <button (click)="voltarPerfil()" class="btn btn-secondary btn-small">Voltar</button>
+        <button (click)="editarPerfil()" class="btn btn-primary btn-small">{{ editMode ? 'Salvar' : 'Editar' }}</button>
+      </div>
+    </div>
+  </div>
+  
