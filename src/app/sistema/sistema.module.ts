@@ -8,6 +8,9 @@ import { DashboardQaComponent } from './dashboard-qa/dashboard-qa.component';
 import { DashboardSuporteComponent } from './dashboard-suporte/dashboard-suporte.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
 import { FormsModule } from '@angular/forms';
+import { NotificacaoComponent } from './notificacao/notificacao.component';
+import { SistemaComponent } from './sistema/sistema.component';
+import { SuporteComponent } from './suporte/suporte.component';
 
 
 
@@ -19,6 +22,9 @@ import { FormsModule } from '@angular/forms';
     DashboardQaComponent,
     DashboardSuporteComponent,
     MeuPerfilComponent,
+    NotificacaoComponent,
+    SistemaComponent,
+    SuporteComponent,
   ],
   imports: [
     CommonModule,

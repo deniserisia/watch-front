@@ -6,6 +6,7 @@ import { DashboardSuporteComponent } from './dashboard-suporte/dashboard-suporte
 import { LayoutComponent } from '../layout/layout.component';
 import { PreVisuComponent } from './pre-visu/pre-visu.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
+import { NotificacaoComponent } from './notificacao/notificacao.component';
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
       {path: 'dashboard-qa', component: DashboardQaComponent},
       {path: 'dashboard-suporte', component: DashboardSuporteComponent},
       {path: 'meu-perfil', component: MeuPerfilComponent},
+      {path:'notificações', component: NotificacaoComponent}
     ]}
 ];
 
