@@ -7,6 +7,8 @@ import { LayoutComponent } from '../layout/layout.component';
 import { PreVisuComponent } from './pre-visu/pre-visu.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
 import { NotificacaoComponent } from './notificacao/notificacao.component';
+import { SuporteComponent } from './suporte/suporte.component';
+import { SistemaComponent } from './sistema/sistema.component';
 
 
 
@@ -18,7 +20,9 @@ const routes: Routes = [
       {path: 'dashboard-qa', component: DashboardQaComponent},
       {path: 'dashboard-suporte', component: DashboardSuporteComponent},
       {path: 'meu-perfil', component: MeuPerfilComponent},
-      {path:'notificações', component: NotificacaoComponent}
+      {path: 'sistemas', component: SistemaComponent},
+      {path:'notificações', component: NotificacaoComponent},
+      {path: 'suporte', component: SuporteComponent}
     ]}
 ];
 
